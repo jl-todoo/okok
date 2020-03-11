@@ -1,11 +1,11 @@
 
 <odoo>
 	<data>	
-		<record model="ir.ui.view" id="res_partner_form_view_inh">
-		      <field name="name">res.partner.form.view.inh</field>
-		      <field name="model">res.partner</field>
+		<record model="ir.ui.view" id="product_template_form_view_inh">
+		      <field name="name">product.template.form.view.inh</field>
+		      <field name="model">product.partner</field>
 		      <field name="type">form</field>
-		      <field name="inherit_id" ref="carpetapadre.idVistaPadre" />
+		      <field name="inherit_id" ref="product.product_template_only_form_view" />
 		      <field name="arch" type="xml">
 		      	<xpath expr="//field[@name='barcode']" position="after">
             		<field name="clase_impres"/>
