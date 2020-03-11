@@ -12,18 +12,12 @@
             		<field name="presentacion"/>
             		<field name="tipo_selle"/>
         		</xpath>
-        		<xpath expr="//field[@name='list_price']" position="before">
-        			<group>
-       		 			<field name="referencia"/>
-       		 		</group>		
-        		</xpath>        		
-                <xpath expr="//field[@name='list_price']" position="after">
-        		 	<field name="moneda" widget="monetary"/>
-        		</xpath>	
-        		<xpath expr="//field[@name='standard_price']" position="after">
-        		 	<field name="version"/>
-        		 	<field name="fecha_version"/>
-        		</xpath>	
+        		<xpath expr="//field[@name='company_id']" position="before">
+       		 			<field name="referencia" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
+       		 			<field name="moneda" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
+       		 			<field name="version" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
+        		 	    <field name="fecha_version" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
+        		</xpath>        			
 			</field>
 		</record>
 	</data>
