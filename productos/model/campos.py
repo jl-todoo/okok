@@ -11,6 +11,3 @@ class ModificacionInventario(models.Model):
 	clase_impres = fields.Char(string = 'Clase de Impresion')
 	presentacion = fields.Char(string = 'Presentacion')
 	tipo_selle = fields.Char(string = 'Tipo de sellado')
-
-
-
