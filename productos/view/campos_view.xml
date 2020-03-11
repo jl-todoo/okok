@@ -14,7 +14,7 @@
         		</xpath>
         		<xpath expr="//field[@name='company_id']" position="before">
        		 			<field name="referencia" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
-       		 			<field name="moneda" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
+       		 			<field name="moneda" widget="monetary" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
        		 			<field name="version" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
         		 	    <field name="fecha_version" on_change="on_change_price(referencia,moneda,version,fecha_version)"/>
         		</xpath>        			
