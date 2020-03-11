@@ -16,7 +16,7 @@
         		 	<field name="referencia"/>
         		</xpath>	
         		<xpath expr="//field[@name='list_price']" position="after">
-        		 	<field name="moneda"/>
+        		 	<field name="moneda" widget="monetary"/>
         		</xpath>	
         		<xpath expr="//field[@name='standard_price']" position="after">
         		 	<field name="version"/>

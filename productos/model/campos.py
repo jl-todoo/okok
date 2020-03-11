@@ -4,7 +4,7 @@ class ModificacionInventario(models.Model):
 
 	_inherit = 'product.template'
 
-	moneda = fields.Monetary(string = 'Moneda') 
+	moneda = fields.Float(string = 'Moneda') 
 	referencia = fields.Char(string ='Referencia del cliente')
 	version = fields.Char(string = 'Version')
 	fecha_version = fields.Date(string = 'Fecha version')
@@ -12,5 +12,5 @@ class ModificacionInventario(models.Model):
 	presentacion = fields.Char(string = 'Presentacion')
 	tipo_selle = fields.Char(string = 'Tipo de sellado')
 
-	
+
 
