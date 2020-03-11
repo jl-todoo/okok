@@ -11,11 +11,6 @@
             		<field name="clase_impres"/>
             		<field name="presentacion"/>
             		<field name="tipo_selle"/>
-        		</xpath>
-        		<xpath expr="//field[@name='company_id']" position="after">
-        			<group>
-        		 		<field name="referencia"/>
-        		 	</group>	
         		</xpath>	
 			</field>
 		</record>
