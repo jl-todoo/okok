@@ -13,9 +13,11 @@
             		<field name="tipo_selle"/>
         		</xpath>
         		<xpath expr="//field[@name='list_price']" position="before">
-       		 		<field name="referencia"/>	
+        			<group>
+       		 			<field name="referencia"/>
+       		 		</group>		
         		</xpath>        		
-                        <xpath expr="//field[@name='list_price']" position="after">
+                <xpath expr="//field[@name='list_price']" position="after">
         		 	<field name="moneda" widget="monetary"/>
         		</xpath>	
         		<xpath expr="//field[@name='standard_price']" position="after">
